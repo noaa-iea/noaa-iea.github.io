@@ -1,0 +1,24 @@
+name: "iea-auto"
+navbar:
+  title: "IEA Auto"
+  left:
+    - text: "Technologies"
+      icon: fa-cogs
+      href: index.html#Technologies
+      menu:
+        - text: "Uploader"
+          href: t_uploader.html
+    - text: "Regions"
+      icon: fa-globe
+      href: index.html#Regions
+  right:
+    - text: "About"
+      href: about.html
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme:
+      version: 4
+      bootswatch: darkly
+    css: styles.css
