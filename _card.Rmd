@@ -30,7 +30,7 @@ param_html <- function(param){
   <h5 class="card-title">`r fm$title`</h5>
   
   <div class="float-left">
-  <h6><i class="fa fa-tags"></i> `r paste(fm$params$category, collapse=", ")`</h6>
+  <h6><i class="fa fa-cogs"></i> `r paste(fm$params$tech, collapse=", ")`</h6>
   </div>
   <div class="float-right">
   <h6><i class="fa fa-globe"></i> `r fm$params$regions`</h6>

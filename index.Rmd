@@ -6,18 +6,7 @@ editor_options:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = F)
-
-if (!require("librarian")){
-  install.packages("librarian")
-}
-shelf(
-  fs,
-  glue,
-  htmltools,
-  rmarkdown,
-  quiet = T)
-
-tagList(html_dependency_font_awesome())
+source("setup.R")
 ```
 
 Here are all **products** listed alphabetically. Alternatively, you can browse by [Technology](tech.html),  [Region](region.html) or from the menu.
@@ -25,14 +14,6 @@ Here are all **products** listed alphabetically. Alternatively, you can browse b
 <div class="card-deck">
 
 ```{r, results='asis'}
-Rmds <- setdiff(list.files(pattern="^p_.*\\.Rmd$"), "index.Rmd")
-src = lapply(Rmds, function(Rmd) { # Rmd = Rmds[1]
-  knitr::knit_expand('_card.Rmd')
-})
-res = knitr::knit_child(text = unlist(src), quiet = TRUE)
-cat(res, sep = '\n')
+get_cards()
 ```
 </div>
-
-<br/>
-

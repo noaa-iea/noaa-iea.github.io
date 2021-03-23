@@ -1,5 +1,5 @@
 ---
-title: "Products by Tech"
+title: "Products by Region"
 output:
   html_document:
     toc: true
@@ -13,22 +13,19 @@ knitr::opts_chunk$set(echo = F)
 source("setup.R")
 ```
 
-## Applications
+## Gulf of Mexico
 
 <div class="card-deck">
 ```{r, results='asis'}
-get_cards(tech = "App")
+get_cards(region = "Gulf of Mexico")
 ```
 </div>
 
-## Dashboards
-
-
-## Infographics
+## Northeast
 
 <div class="card-deck">
 ```{r, results='asis'}
-get_cards(tech = "Infographic")
+get_cards(region = "Northeast")
 ```
 </div>
 

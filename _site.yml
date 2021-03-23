@@ -2,18 +2,18 @@ name: "iea-auto"
 navbar:
   title: "IEA Auto"
   left:
-    - text: "Technologies"
+    - text: "Tech"
       icon: fa-cogs
-      href: index.html#Technologies
-      menu:
-        - text: "Uploader"
-          href: t_uploader.html
+      href: tech.html
+      # menu:
+      #   - text: "Uploader"
+      #     href: t_uploader.html
     - text: "Regions"
       icon: fa-globe
-      href: index.html#Regions
-  right:
-    - text: "About"
-      href: about.html
+      href: region.html
+  # right:
+  #   - text: "About"
+  #     href: about.html
 output_dir: "."
 output:
   html_document:

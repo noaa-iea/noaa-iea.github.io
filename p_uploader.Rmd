@@ -5,7 +5,7 @@ bibliography: [iea-auto_1.bib]
 biblio-style: apalike
 link-citations: yes
 params:
-  category: app
+  tech: App
   description: "Shiny app to login via Google and update existing datasets with new data that are registered in the Northeast [ecodata](https://github.com/NOAA-EDAB/ecodata) R package."
   img: images/uploader.png
   regions: 
@@ -17,12 +17,9 @@ params:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-
-library(rmarkdown)
-yaml_front_matter("t_uploader.Rmd")
 ```
 
-![](images/uploader.png)
+![](`r params$img`)
 
   - Regions: `r paste(params$Regions, collapse=',')`
   - [Website](`r params$website`)
