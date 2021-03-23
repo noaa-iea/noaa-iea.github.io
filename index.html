@@ -19,9 +19,6 @@
 <script src="site_libs/bootstrap-4.5.3/bootstrap.bundle.min.js"></script>
 <script src="site_libs/bs3compat-0.2.4/tabs.js"></script>
 <script src="site_libs/bs3compat-0.2.4/bs3compat.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -213,69 +210,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -283,16 +217,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-sm-12 col-md-4 col-lg-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-sm-12 col-md-8 col-lg-9">
 
 
 
@@ -349,65 +273,30 @@ div.tocify {
 </div>
 
 
-<div id="technologies" class="section level2">
-<h2>Technologies</h2>
-<div id="applications" class="section level3">
-<h3>Applications</h3>
-<ul>
-<li><strong>Uploader</strong> <img src="images/uploader.png" />
-<ul>
-<li>Regions: Northeast</li>
-<li><a href="https://shiny.iea-demo.us/uploader/">App</a></li>
-<li><a href="https://github.com/marinebon/iea-uploader">Code</a></li>
-<li><a href="https://www.youtube.com/watch?v=jpKv5PbBxq4">Tutorial</a></li>
-</ul></li>
-</ul>
-</div>
-<div id="dashboards" class="section level3">
-<h3>Dashboards</h3>
-<ul>
-<li></li>
-</ul>
-</div>
-<div id="infographics" class="section level3">
-<h3>Infographics</h3>
-<ul>
-<li><strong>Florida Keys</strong> <img src="images/infographiq_fk-esr.png" />
-<ul>
-<li>Regions: Gulf of Mexico</li>
-<li><a href="https://shiny.iea-demo.us/uploader/">Website</a></li>
-<li><a href="https://github.com/marinebon/iea-uploader">Code</a></li>
-</ul></li>
-</ul>
-</div>
-<div id="libraries" class="section level3">
-<h3>Libraries</h3>
-</div>
-</div>
-<div id="regions" class="section level2">
-<h2>Regions</h2>
-<div id="california-current" class="section level3">
-<h3>California Current</h3>
-</div>
-<div id="gulf-of-mexico" class="section level3">
-<h3>Gulf of Mexico</h3>
-</div>
-<div id="northeast" class="section level3">
-<h3>Northeast</h3>
-</div>
-</div>
-<div id="layout" class="section level2">
-<h2>Layout</h2>
-<p>Will setup screenshot images per product and region with cards like so…</p>
-<div class="card-group">
+<p>Here are all <strong>products</strong> listed alphabetically. Alternatively, you can browse by <a href="tech.html">Technology</a>, <a href="region.html">Region</a> or from the menu.</p>
+<div class="card-deck">
 <div class="card">
-<img class="card-img-top" src="images/card_286x180.svg" alt="Card image cap">
+<img class="card-img-top" src="images/infographiq_fk-esr.png" alt="Card image cap">
 <div class="card-body">
 <h5 class="card-title">
-Card title
+Florida Keys ESR Infographic
 </h5>
+<div class="float-left">
+<h6>
+<i class="fa fa-tags"></i> infographic
+</h6>
+</div>
+<div class="float-right">
+<h6>
+<i class="fa fa-globe"></i> Gulf of Mexico
+</h6>
+</div>
+<div class="clearfix">
+
+</div>
+<p><i class="fa fa-link"></i> <a href="https://marinebon.org/fk-esr-info/infographic.html">website</a>   <i class="fa fa-info-circle"></i> <a href="p_info-fk-esr.html">details</a>   <i class="fa fa-github"></i> <a href="https://github.com/marinebon/fk-esr-info">code</a>  </p>
 <p class="card-text">
-This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+Conceptual diagram as interactive infographic for the Florida Keys Sanctuary associated with Ecosystem Status Report (ESR).
 </p>
 </div>
 <div class="card-footer">
@@ -415,27 +304,27 @@ This is a wider card with supporting text below as a natural lead-in to addition
 </div>
 </div>
 <div class="card">
-<img class="card-img-top" src="images/card_286x180.svg" alt="Card image cap">
+<img class="card-img-top" src="images/uploader.png" alt="Card image cap">
 <div class="card-body">
 <h5 class="card-title">
-Card title
+Uploader
 </h5>
+<div class="float-left">
+<h6>
+<i class="fa fa-tags"></i> app
+</h6>
+</div>
+<div class="float-right">
+<h6>
+<i class="fa fa-globe"></i> Northeast
+</h6>
+</div>
+<div class="clearfix">
+
+</div>
+<i class="fa fa-link"></i> <a href="https://shiny.iea-demo.us/uploader/">website</a>   <i class="fa fa-info-circle"></i> <a href="p_uploader.html">details</a>   <i class="fa fa-github"></i> <a href="https://github.com/marinebon/iea-uploader">code</a>   <i class="fa fa-youtube"></i> <a href="https://www.youtube.com/watch?v=jpKv5PbBxq4">video</a>  
 <p class="card-text">
-This card has supporting text below as a natural lead-in to additional content.
-</p>
-</div>
-<div class="card-footer">
-<small class="text-muted">Last updated 3 mins ago</small>
-</div>
-</div>
-<div class="card">
-<img class="card-img-top" src="images/card_286x180.svg" alt="Card image cap">
-<div class="card-body">
-<h5 class="card-title">
-Card title
-</h5>
-<p class="card-text">
-This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+Shiny app to login via Google and update existing datasets with new data that are registered in the Northeast <a href="https://github.com/NOAA-EDAB/ecodata">ecodata</a> R package.
 </p>
 </div>
 <div class="card-footer">
@@ -444,12 +333,9 @@ This is a wider card with supporting text below as a natural lead-in to addition
 </div>
 </div>
 <p><br/></p>
-</div>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -482,32 +368,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

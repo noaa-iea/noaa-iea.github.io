@@ -1,17 +1,13 @@
 ---
-title: "Uploader"
-output: html_document
-bibliography: [iea-auto_1.bib]
-biblio-style: apalike
-link-citations: yes
+title: "Florida Keys ESR Infographic"
 params:
-  category: Applications
-  img: images/uploader.png
-  Regions: 
-  - NE
-  website: https://shiny.iea-demo.us/uploader/
-  code: https://github.com/marinebon/iea-uploader
-  video: https://www.youtube.com/watch?v=jpKv5PbBxq4
+  category: infographic
+  description: "Conceptual diagram as interactive infographic for the Florida Keys Sanctuary associated with Ecosystem Status Report (ESR)."
+  img: images/infographiq_fk-esr.png
+  regions: 
+  - Gulf of Mexico
+  website: https://marinebon.org/fk-esr-info/infographic.html
+  code: https://github.com/marinebon/fk-esr-info
 ---
 
 ```{r setup, include=FALSE}

@@ -17,9 +17,9 @@ navbar:
 output_dir: "."
 output:
   html_document:
-    toc: true
-    toc_float: true
+    #toc: true
+    #toc_float: true
     theme:
       version: 4
-      bootswatch: darkly
+      bootswatch: lumen
     css: styles.css

@@ -1,0 +1,48 @@
+```{r}
+Rmd <- "{{Rmd}}" # Rmd <- "t_info-fk-esr.Rmd"
+fm  <- yaml_front_matter(Rmd)
+
+# get link to details
+fm$params$details <- path_ext_set(Rmd, "html")
+
+param_icons <- icons <- c(
+  website = "link",
+  details = "info-circle",
+  code    = "github",
+  video   = "youtube")
+
+param_html <- function(param){
+  if (!param %in% names(fm$params))
+    return("")
+  
+  icon <- param_icons[[param]]
+  val  <- fm$params[[param]]
+  
+  glue('<i class="fa fa-{icon}"></i>&nbsp;<a href="{val}">{param}</a>&nbsp;&nbsp;')
+}
+
+# TODO: Last updated: get from Github API 
+```
+
+<div class="card">
+  <img class="card-img-top" src="`r fm$params$img`" alt="Card image cap">
+  <div class="card-body">
+  <h5 class="card-title">`r fm$title`</h5>
+  
+  <div class="float-left">
+  <h6><i class="fa fa-tags"></i> `r paste(fm$params$category, collapse=", ")`</h6>
+  </div>
+  <div class="float-right">
+  <h6><i class="fa fa-globe"></i> `r fm$params$regions`</h6>
+  </div>
+  <div class="clearfix"></div>
+  `r param_html("website")`
+  `r param_html("details")`
+  `r param_html("code")`
+  `r param_html("video")`
+  <p class="card-text">`r fm$params$description`</p>
+  </div>
+  <div class="card-footer">
+  <small class="text-muted">Last updated 3 mins ago</small>
+  </div>
+</div>

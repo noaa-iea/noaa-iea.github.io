@@ -1,0 +1,60 @@
+---
+title: "Uploader"
+output: html_document
+bibliography: [iea-auto_1.bib]
+biblio-style: apalike
+link-citations: yes
+params:
+  category: app
+  description: "Shiny app to login via Google and update existing datasets with new data that are registered in the Northeast [ecodata](https://github.com/NOAA-EDAB/ecodata) R package."
+  img: images/uploader.png
+  regions: 
+  - Northeast
+  website: https://shiny.iea-demo.us/uploader/
+  code: https://github.com/marinebon/iea-uploader
+  video: https://www.youtube.com/watch?v=jpKv5PbBxq4
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(rmarkdown)
+yaml_front_matter("t_uploader.Rmd")
+```
+
+![](images/uploader.png)
+
+  - Regions: `r paste(params$Regions, collapse=',')`
+  - [Website](`r params$website`)
+  - [Code](`r params$code`)
+  - [Video](`r params$video`)
+
+## Details
+
+The Uploader app updates datasets in the [ecodata](https://github.com/NOAA-EDAB/ecodata) R package.
+
+![Figure 3 [@bastilleImprovingIEAApproach2021] with extra highlighting in yellow: "Data Uploader", "Shiny application". Northeast IEA indicator workflow from ingesting raw data to generating final reports. This workflow outlines the stream of indicator data starting with raw uploadable formats (tables in Excel or text format) or existing on-line datasets in ERDDAP. A Google Form is used to collect information on new indicators, including metadata and file uploads. Existing indicators that need to be updated with newer data can use the Data Uploader application to update and visualize the dataset with the new data. All indicator data are managed within the ecodata R package. R scripts ingest the data (get_{indicator}.R) into a documentable and reusable R dataset format (*.rda). Rmarkdown reports organized by theme alternate text with plots of the indicators. The R chunks in these Rmarkdown reports are individually output for plotting reuse by the Data Uploader application and the many IEA reports.](images/uploader_fig-ne-context.png)
+
+
+
+using the following dataset attributes:
+
+- `data_steward`: name and email of all data stewards
+- `tech-doc_url`: link to documentation of the dataset
+- `data_files`: file names of input data
+
+For instance here's how the `aquaculture` dataset gets attributed in [`data-raw/get_aquaculture.R`]( https://github.com/NOAA-EDAB/ecodata/blob/788a80c529b127cc92de761ca0c7a4dc48f04e63/data-raw/get_aquaculture.R):
+
+```r
+  attr(aquaculture, "tech-doc_url") <- "https://noaa-edab.github.io/tech-doc/aquaculture.html"
+  attr(aquaculture, "data_files")   <- list(
+    aquaculture_xlsx = aquaculture_xlsx)
+  attr(aquaculture, "data_steward") <- c(
+    "Chris Schillaci <christopher.shillaci@noaa.gov>")
+```
+
+## References
+
+
+
+
