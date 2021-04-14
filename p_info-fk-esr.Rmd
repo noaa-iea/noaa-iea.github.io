@@ -6,7 +6,7 @@ params:
   img: images/infographiq_fk-esr.png
   regions: 
   - Gulf of Mexico
-  website: https://marinebon.org/fk-esr-info/infographic.html
+  website: https://noaa-iea.github.io/fk-esr-info/infographic.html
   code: https://github.com/marinebon/fk-esr-info
 ---
 
