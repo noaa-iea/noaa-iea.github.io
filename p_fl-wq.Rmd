@@ -1,0 +1,36 @@
+---
+title: "Fisher Water Quality Monitoring in Florida"
+params:
+  tech: Dashboard
+  description: "Dashboard to visualize water quality data collected by fishers to monitor for oxygen depleted zones."
+  img: images/fl-wq.png
+  regions: 
+  - Gulf of Mexico
+  website: https://noaa-iea.github.io/fl-wq/
+  code: https://github.com/noaa-iea/fl-wq
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(rmarkdown)
+```
+
+![](`r params$img`)
+
+  - Regions: `r paste(params$Regions, collapse=',')`
+  - [Website](`r params$website`)
+  - [Code](`r params$code`)
+  - [Video](`r params$video`)
+
+## Details
+
+This project was initiated by Chris Kelble to faciliate fisher monitoring for anoxic zones. I worked principally with postdoc Brendan Turley on this, but fisherman stopped collecting water quality from CTDs with covid lockdown. Here's an early illustration of the idealized process:
+
+![](images/fl-wq_process.png)
+
+
+
+
+
+

@@ -7,7 +7,7 @@ params:
   regions: 
   - Gulf of Mexico
   website: https://noaa-iea.github.io/fk-esr-info/infographic.html
-  code: https://github.com/marinebon/fk-esr-info
+  code: https://github.com/noaa-iea/fk-esr-info
 ---
 
 ```{r setup, include=FALSE}
