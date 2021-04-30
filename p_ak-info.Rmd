@@ -4,7 +4,7 @@ params:
   tech: Infographic
   description: "Conceptual diagram as interactive infographic for the 2018 Eastern Bering Sea Ecosystem Status Report: In Brief
 ."
-  img: images/infographiq_fk-esr.png
+  img: images/ak-info.png
   regions: 
   - Alaska
   website: https://noaa-iea.github.io/ak-info
