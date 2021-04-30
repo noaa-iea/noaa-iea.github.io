@@ -1,0 +1,36 @@
+---
+title: "Alaska Bering Sea Infographic"
+params:
+  tech: Infographic
+  description: "Conceptual diagram as interactive infographic for the 2018 Eastern Bering Sea Ecosystem Status Report: In Brief
+."
+  img: images/infographiq_fk-esr.png
+  regions: 
+  - Alaska
+  website: https://noaa-iea.github.io/ak-info
+  code: https://github.com/noaa-iea/ak-info
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(rmarkdown)
+```
+
+![](`r params$img`)
+
+  - Regions: `r paste(params$Regions, collapse=',')`
+  - [Website](`r params$website`)
+  - [Code](`r params$code`)
+  - [Video](`r params$video`)
+
+## Details
+
+So far, only the **Northern fur seal pup** icon is plotting a modal window:
+
+![](images/ak-info_seal-modal.png)
+
+
+
+
+
