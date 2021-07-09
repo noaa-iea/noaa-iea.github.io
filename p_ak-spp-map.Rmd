@@ -1,0 +1,32 @@
+---
+title: "Alaska Rare Species Map"
+params:
+  tech: App
+  description: "Gulf of Alaska rare species map from community."
+  img: images/ak-spp-map.png
+  regions: 
+  - Alaska
+  website: https://shiny.ecoquants.com/goa-rare-spp-map/
+  code: https://github.com/curryc2/GOA_IEA_Shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(rmarkdown)
+```
+
+![](`r params$img`)
+
+  - Regions: `r paste(params$Regions, collapse=',')`
+  - [Website](`r params$website`)
+  - [Code](`r params$code`)
+  - [Video](`r params$video`)
+
+## Details
+
+TBD
+
+
+
+

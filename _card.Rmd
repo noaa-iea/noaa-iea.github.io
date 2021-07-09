@@ -42,7 +42,7 @@ param_html <- function(param){
   `r param_html("video")`
   <p class="card-text">`r fm$params$description`</p>
   </div>
-  <div class="card-footer">
+  <!--div class="card-footer">
   <small class="text-muted">Last updated 3 mins ago</small>
-  </div>
+  </div-->
 </div>
