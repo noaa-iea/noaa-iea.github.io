@@ -15,7 +15,7 @@ source("setup.R")
 
 ## Applications
 
-<div class="card-deck">
+<div class="row row-cols-1 row-cols-md-2">
 ```{r, results='asis'}
 get_cards(tech = "App")
 ```
@@ -23,12 +23,24 @@ get_cards(tech = "App")
 
 ## Dashboards
 
+<div class="row row-cols-1 row-cols-md-2">
+```{r, results='asis'}
+get_cards(tech = "Dashboard")
+```
+</div>
 
 ## Infographics
 
-<div class="card-deck">
+<div class="row row-cols-1 row-cols-md-2">
 ```{r, results='asis'}
 get_cards(tech = "Infographic")
 ```
 </div>
 
+## Training
+
+<div class="row row-cols-1 row-cols-md-2">
+```{r, results='asis'}
+get_cards(tech = "Training")
+```
+</div>

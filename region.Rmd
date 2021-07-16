@@ -13,9 +13,17 @@ knitr::opts_chunk$set(echo = F)
 source("setup.R")
 ```
 
+## Alaska
+
+<div class="row row-cols-1 row-cols-md-2">
+```{r, results='asis'}
+get_cards(region = "Alaska")
+```
+</div>
+
 ## Gulf of Mexico
 
-<div class="card-deck">
+<div class="row row-cols-1 row-cols-md-2">
 ```{r, results='asis'}
 get_cards(region = "Gulf of Mexico")
 ```
@@ -23,7 +31,7 @@ get_cards(region = "Gulf of Mexico")
 
 ## Northeast
 
-<div class="card-deck">
+<div class="row row-cols-1 row-cols-md-2">
 ```{r, results='asis'}
 get_cards(region = "Northeast")
 ```

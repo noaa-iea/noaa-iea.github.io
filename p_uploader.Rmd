@@ -11,7 +11,7 @@ params:
   regions: 
   - Northeast
   website: https://shiny.iea-demo.us/uploader/
-  code: https://github.com/noaa-iea/iea-uploader
+  code: https://github.com/noaa-iea/uploader
   video: https://www.youtube.com/watch?v=jpKv5PbBxq4
 ---
 

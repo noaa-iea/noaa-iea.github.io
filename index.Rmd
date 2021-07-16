@@ -9,11 +9,11 @@ knitr::opts_chunk$set(echo = F)
 source("setup.R")
 ```
 
-Here are all **products** listed alphabetically. Alternatively, you can browse by [Technology](tech.html),  [Region](region.html) or from the menu.
+<h4>Here are all **products** listed alphabetically. Alternatively, you can browse by [Technology](tech.html),  [Region](region.html) or from the menu.</h4>
 
-<div class="card-deck">
-
+<div class="row row-cols-1 row-cols-md-2">
 ```{r, results='asis'}
 get_cards()
 ```
 </div>
+

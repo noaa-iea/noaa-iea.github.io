@@ -1,0 +1,29 @@
+---
+title: "Reproducible Reporting with R"
+params:
+  tech: Training
+  description: "Free training series on Reproducible Reporting with R for marine ecological indicators."
+  img: images/r3-train.png
+  regions: 
+  - All
+  website: https://noaa-iea.github.io/r3-train/
+  code: https://github.com/noaa-iea/r3-train
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(rmarkdown)
+```
+
+![](`r params$img`)
+
+  - Regions: `r paste(params$Regions, collapse=',')`
+  - [Website](`r params$website`)
+  - [Code](`r params$code`)
+  - [Video](`r params$video`)
+
+## Details
+
+This is a free 8-week webinar training series on Reproducible Reporting with R (R3) for marine ecological indicators, sponsored by the Working Group on the Northwest Atlantic Regional Sea ([WGNARS](https://www.ices.dk/community/groups/Pages/WGNARS.aspx)) and open to all.
+

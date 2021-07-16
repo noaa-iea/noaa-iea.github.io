@@ -2,7 +2,7 @@
 title: "Alaska Bering Sea Infographic"
 params:
   tech: Infographic
-  description: "Conceptual diagram as interactive infographic for the 2018 Eastern Bering Sea Ecosystem Status Report: In Brief
+  description: "Conceptual diagram as interactive infographic for the 2018 Eastern Bering Sea Ecosystem Status Report: In Brief.
 ."
   img: images/ak-info.png
   regions: 

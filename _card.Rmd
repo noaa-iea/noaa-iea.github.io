@@ -23,7 +23,7 @@ param_html <- function(param){
 
 # TODO: Last updated: get from Github API 
 ```
-
+<div class="col mb-1">
 <div class="card">
   <img class="card-img-top" src="`r fm$params$img`" alt="Card image cap">
   <div class="card-body">
@@ -45,4 +45,5 @@ param_html <- function(param){
   <!--div class="card-footer">
   <small class="text-muted">Last updated 3 mins ago</small>
   </div-->
+</div>
 </div>

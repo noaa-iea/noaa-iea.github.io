@@ -1,0 +1,35 @@
+---
+title: "Responsive Table for Data Visualization"
+params:
+  tech: Infographic
+  description: "Responsive data tables for visualization of scientific diagrams."
+  img: images/responsive-table.png
+  regions: 
+  - Northeast
+  website: https://marinebon.org/infographiqJS/table_modalv1.html
+  code: https://github.com/marinebon/infographiqJS
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(rmarkdown)
+```
+
+![](`r params$img`)
+
+  - Regions: `r paste(params$Regions, collapse=',')`
+  - [Website](`r params$website`)
+  - [Code](`r params$code`)
+  - [Video](`r params$video`)
+
+## Details
+
+Please see the following for more on developing responsive tables for data visualization:
+
+- [infographiq](https://marinebon.org/infographiq/responsive-data-tables.html).
+
+
+
+
+
